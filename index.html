@@ -1,12 +1,64 @@
-<!Doctype html>
-<html lang = "en">
-  <head>
-    <title>Sample page</title>
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset = "UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name = "Dynamic shopping list" content = "this is a dynamic shopping list">
+    <meta name = "author" content="Abongile Arthur Mavela">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Shopping List </title>
+
+
     <style>
-      
+
+        button {
+            margin-left: 10px;
+        }
+
+        #textBox:focus {
+            border: 2px solid lightblue;
+        }
     </style>
-  </head>
-  <body>
-    <h1>IF you are seeing this than mission success</h1>
-  </body>
+</head>
+
+<body>
+<!-- 
+Active learning: A dynamic shopping list
+
+In this challenge we want to make a simple shopping list example that allows you to dynamically add items 
+to the list using a form input and button. When you add an item to the input and press the button:
+
+The item should appear in the list.
+Each item should be given a button that can be pressed to delete that item off the list.
+The input should be emptied and focused ready for you to enter another item.
+
+Create three variables that hold references to the list (<ul>), <input>, and <button> elements.
+
+Create a function that will run in response to the button being clicked.
+
+Inside the function body, start off by storing the current value of the input element in a variable.
+
+Next, empty the input element by setting its value to an empty string — ''.
+
+Create three new elements — a list item (<li>), <span>, and <button>, and store them in variables.
+
+Append the span and the button as children of the list item.
+
+Set the text content of the span to the input element value you saved earlier, and the text content of the button to 'Delete'.
+Append the list item as a child of the list.
+
+Attach an event handler to the delete button so that, when clicked, it will delete the entire list item (<li>...</li>).n,b
+Finally, use the focus() method to focus the input element ready for entering the next shopping list item.
+-->
+<h1>My Shopping List</h1>
+    <label for = "name">Enter a new item:</label>
+    <input id="textBox" type="text" />
+    <button id="pressButton"> Add item </button>
+    <div id="output"></div>
+
+    <script src="mainscript.js"></script>
+    
+</body>
+
 </html>
